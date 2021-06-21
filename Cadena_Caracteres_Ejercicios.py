@@ -49,7 +49,7 @@
 
 ###################################################################################################
 # Ejercicio No 3:
-# Introducir  una cadena por teclado que representa una frase (palabras separadas por espacios).
+# Introducir  una cadena por teclado que representa una frase (palabras separadas por un espacio).
 # Realiza un programa que cuente cuantas palabras tiene. 
 # La cadena no debe contener números,ni caracteres especiales
 ###################################################################################################
@@ -121,4 +121,3 @@
 
 # print("Cadena Inicial :",cadena)
 # print("Cadena Inicial :",cadenaModificada)
-

@@ -1,6 +1,5 @@
 """
   Diccionarios
-
   Autor :  Formador
 |
   Creación/ Actualización  Observaciones
@@ -292,6 +291,34 @@
 # print(miFamilia["hija"]["edad"])
 
 
+#10.1 Listas como valores de un diccionario
+
+# listaPapa = ["pepito", "Mayo" ,  25]
+# listaMama = ["pepita", "Junio",  24]
+# listaHija = ["pepin" , "Enero",  2 ]
+
+# elementoDiccionarioPapa = {"papa" : listaPapa}  # Sería equivalente a diccionarioPapa = {"papa" : ["pepito" , "Mayo"  ,  25]}
+# elementoDiccionarioMama = {"mama" : listaMama } # Sería equivalente a diccionarioMama = {"mama" : ["pepita" , "Junio" ,  24]}
+# elementoDiccionarioHija = {"hija" : listaHija}  # Sería equivalente a diccionarioHija = {"hija  : ["pepin"  , "Enero" ,   2]}
+
+# print(len(elementoDiccionarioPapa))
+# print(len(elementoDiccionarioMama))
+# print(len(elementoDiccionarioHija))
+
+#diccionarioFamilia = {"papa" : listaPapa,"mama" : listaMama, "hija" : listaHija}
+# Sería equivalente a 
+# diccionarioFamilia = { "papa" : ["pepito" , "Mayo"  ,  25],  "mama" : ["pepita" , "Junio" ,  24] , "hija" : ["pepin"  , "Enero" ,   2] }
+# print(len(diccionarioFamilia))
+
+
+# print(diccionarioFamilia["papa"][0]) # Nombre Papa
+# print(diccionarioFamilia["papa"][2]) # Edad Papa
+# print(diccionarioFamilia["hija"][0]) # Nombre Hija
+# print(diccionarioFamilia["mama"])
+
+
+#diccionarioFamilia = {elementoDiccionarioPapa,elementoDiccionarioMama,elementoDiccionarioHija}  # Error
+
 # #11. funcion fromkeys. Crea un diccionario apartir de la llave, valor
 
 
@@ -309,9 +336,6 @@
 # municipiosCundinamarca =dict.fromkeys(municipios) # Crea valores None si no se define valor 
 # print(municipiosCundinamarca)
 
-# municipios = ("sopo","guatavita","suesca")
-# municipiosCundinamarca =dict.fromkeys(municipios) # Crea valores None si no se define valor 
-# print(municipiosCundinamarca)
 
 
 # #11. funcion setdefault(). Retorna el valor del item si la llave existe. Sino crea elemento
