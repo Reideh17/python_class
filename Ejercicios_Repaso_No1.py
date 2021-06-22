@@ -1,16 +1,16 @@
-
-  # Ejercicios de repaso: Estructuras de decisión,repetición
+"""
+  Ejercicios de repaso: Estructuras de decisión,repetición
   
-  # Autor :  Formador
-  # Creación/ Actualización  Observaciones
-  #    Mayo-26-2021          v1: Versión inicial del programa
-  #    Mayo-29-2021          v2: Se incluye el perímetro del triángulo
-  #    Mayo-31-2021          v3: Se incluye validar si es posible construir el triángulo
-  #    Junio-1-2021          v4: Validar que los números ingresados por el usuario sean 
-  #                              caracteres entre el cero y el 9 o combinatoria de ellos
-  #    Junio-2-2021          v5: Incluir función para validar si es posible construir el triángulo
+  Autor :  Formador
+  Creación/ Actualización  Observaciones
+     Mayo-26-2021          v1: Versión inicial del programa
+     Mayo-29-2021          v2: Se incluye el perímetro del triángulo
+     Mayo-31-2021          v3: Se incluye validar si es posible construir el triángulo
+     Junio-1-2021          v4: Validar que los números ingresados por el usuario sean 
+                               caracteres entre el cero y el 9 o combinatoria de ellos
+     Junio-2-2021          v5: Incluir función para validar si es posible construir el triángulo
 
-
+"""
 
 # Notas generales:
 # condición: se crea utilizando operadores relacionales o de comparación y lógicos

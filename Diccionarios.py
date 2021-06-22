@@ -1,5 +1,6 @@
 """
   Diccionarios
+
   Autor :  Formador
 |
   Creación/ Actualización  Observaciones

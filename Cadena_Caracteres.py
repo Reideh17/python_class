@@ -34,10 +34,10 @@
 # print(ultimaLetra,penultimaLetra)
 
 # ############################################################################################
-# # Índices de las cadenas de caracteres:
+# # Índices de las cadenas de caracteres:
 # # Se puede usar cualquier expresión, incluyendo variables y operadores, como un índice, 
-# # pero el valor del índice tiene que ser un número entero 
-# # ########################################################################################## 
+# # pero el valor del índice tiene que ser un número entero 
+# # ########################################################################################## 
 
 # # nombreFruta = 'naranja'
 # # primeraLetra = nombreFruta[1.5]
@@ -86,7 +86,7 @@
 # print(porcion)
 
 # ####################################################################################################
-# #Si elprimer indice es  mayor al seguno  o los indices son iguales el resultado es una cadena vacia
+# #Si elprimer indice es  mayor al seguno  o los indices son iguales el resultado es una cadena vacia
 # # nombreFruta = 'naranja'
 # ####################################################################################################
 
@@ -107,14 +107,14 @@
 # nombreFruta[0] = 'P'         # Genera error
 
 
-# # Pero  si puedo hacer
+# # Pero  si puedo hacer
 # nombreFruta = "naranja"
 # refresco    = nombreFruta[:] + "da"
 # print(refresco)
 
 
 # #################################################################
-# # Identificar un  caracter o cadena de caracteres en una cadena
+# # Identificar un  caracter o cadena de caracteres en una cadena
 # #################################################################
 # nombreFruta="naranja"
 
@@ -357,3 +357,4 @@
 # nombreFruta = ",,,,,rrttggmmmm.....banana....rrr"
 # sinCaracteres = nombreFruta.strip(",.grtm") # remueve los caracteres indicados.
 # print(sinCaracteres)
+

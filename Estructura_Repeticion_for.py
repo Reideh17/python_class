@@ -87,18 +87,14 @@
 # Ejercicio 7  - Muestre las tablas de Multiplicar según rango 
 #############################################################
 
-# tablainicial = int(input("tabla inicial : "))
-# tablafinal   = int(input("tabla final : "))
+# tablaInicial = int(input("Tabla Inicial : "))
+# tablaFinal   = int(input("Tabla Final : "))
 
-# while (tablafinal < tablainicial ):
-#   print("La tabla final no puede contener un numero mayor a la incial1")
-#   tablafinal   = int(input("tabla final : "))
-
-# for tabla  in range (tablainicial,tablafinal+1):
-#     for lineatabla in range(1,11):
-#           producto = lineatabla * tabla
-#           print("{} x {} = {}".format(tabla,lineatabla,producto)) 
-      
+# for tabla  in range (tablaInicial,tablaFinal+1):
+#     for lineaTabla in range(1,11):
+#         producto = lineaTabla * tabla
+#         print("{} x {} = {}".format(tabla,lineaTabla,producto)) 
+    
 #     print("\n")
 
 #######################################################################
@@ -110,21 +106,21 @@
 #   Son divisibles por sí mismo y por 1.
 #######################################################################
 
-rangoFinal = int(input(" Hasta que número quiere imprimir los números primos : "))
+# rangoFinal = int(input(" Hasta que número quiere imprimir los números primos : "))
 
- #ciclo externo para identificar hasta que número de primos quiero imprimir
-for numeroActual in range(2,rangoFinal+1):
+# #ciclo externo para identificar hasta que número de primos quiero imprimir
+# for numeroActual in range(2,rangoFinal+1):
 
-      contadorDivisores = 0
+#      contadorDivisores = 0
 
-      # ciclo interno para identificar el número de dvisores 
-      for divisor in range(2,numeroActual+1):
-         if (numeroActual % divisor == 0):
-            contadorDivisores +=1
-    
-      # Si solo encontro que es divisible por si mismo
-      if contadorDivisores <=1 :
-         print(numeroActual)
+#      # ciclo interno para identificar el número de dvisores 
+#      for divisor in range(2,numeroActual+1):
+#         if (numeroActual % divisor == 0):
+#            contadorDivisores +=1
+     
+#      # Si solo encontro que es divisible por si mismo
+#      if contadorDivisores <=1 :
+#         print(numeroActual,end=" " )
 
 
 

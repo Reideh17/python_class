@@ -2,7 +2,7 @@
   Ejercicios Listas
 
   Autor :  Formador
-|
+
   Creación/ Actualización  Observaciones
      Junio-2-2021          Versión inicial del programa
 """
@@ -150,7 +150,7 @@
 
 # import random
 
-# def seleccionarCarta(numeroPalo:int, numeroCara:int) ->tuple:
+# def seleccionarCarta(numeroPalo:int, numeroCara:int) ->list:
 #     caras = ["As ", "Dos ", "Tres ", "Cuatro ", "Cinco ", "Seis ",  "Siete ", "Ocho ", "Nueve ", "Diez ", "Joker ", "Reina ", "Rey "]
 #     palos = ["Corazones ", "Diamantes ", "Treboles ", "Espadas "]
 
@@ -240,4 +240,80 @@
 # print("Lista de Primos :",listaPrimos )
 
 
+###################################################################################
+# Ejercicio 8:
+# Encontrar cuantos valores  estan repetidos en una lista (sin contar el original)
+###################################################################################
+
+# listaValores = [1,2,3,1,2,1,1,2] 
+
+# valoresRepetidos = []
+# repetidos = 0
+# for valor in listaValores:
+#     if valor in valoresRepetidos:
+#        repetidos += 1
+#     else:
+#        valoresRepetidos.append(valor)
+
+# print(repetidos)
+
+##########################################################################################
+# Ejercicio 9:
+# Dada una lista determinar las veces que el elmento actual es igual al elemento anterior
+##########################################################################################
+
+
+#------------------
+# Versión con while
+#------------------
+
+# listaValores = [1,1,3,2,2] 
+
+
+# longitudListaValores  = len(listaValores)
+
+
+# numeroIguales  = 0
+# posicionActual = 1
+# while (posicionActual <= longitudListaValores-1):
+#       if listaValores[posicionActual] == listaValores[posicionActual-1]:
+#           numeroIguales += 1
+#       posicionActual +=1
+
+# print(numeroIguales)
+
+
+#------------------
+# Versión con for
+#------------------
+# listaValores = [1,1,3,2,2] 
+
+# longitudListaValores  = len(listaValores)
+# numeroIguales  = 0
+# for posicionActual in range(1,longitudListaValores):
+#     if listaValores[posicionActual] == listaValores[posicionActual-1]:
+#        numeroIguales += 1
+
+# print(numeroIguales)
+
+
+###################################################################################################
+# Ejercicio 10:
+# Dada una lista determinar las veces que el elmento actual es igual a los dos elementos anteriores
+###################################################################################################
+
+# listaValores          = [1,2,1,2,1] 
+# longitudListaValores  = len(listaValores)
+
+# numeroIguales  = 0
+# for posicionActual in range(1,longitudListaValores):
+#     posicionAnterior = posicionActual - 2
+#     rangoAnterior    = range(posicionAnterior, posicionActual)
+#     for revisionActual in rangoAnterior:
+#         if (revisionActual >= 0):
+#            if listaValores[posicionActual] == listaValores[revisionActual]:
+#               numeroIguales += 1  
+               
+
+# print(numeroIguales)
 

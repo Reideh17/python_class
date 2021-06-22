@@ -124,6 +124,16 @@
 # # for indice in range(len(numeros)):
 # #   print(numeros[indice],end=" ")
 
+# for con indice - Encontrar las palabras que inician con "c " en la lista
+# numeros = ["piña","fresas","calabazas","manzanas","fresas","uvas","zanahorias","bananos","cerezas","fresas"]
+
+# longitud= len(numeros) 
+# for indice in range(longitud):
+#      if numeros[indice].startswith("c"):
+#         print(numeros[indice])
+
+
+
 
 # # #while 
 
