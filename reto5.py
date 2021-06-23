@@ -10,15 +10,20 @@ def promedio_precios(tienda_de_carlos):
   return(round(promedio,1))
 
 def precio_mayor(tienda_de_carlos):  
-#   producto_mayor = []
-#   for i in tienda_de_carlos:          
-#     for key in tienda_de_carlos:  
-#         if (tienda_de_carlos[i][1] > tienda_de_carlos[key][1]):
-#             producto_mayor.append(tienda_de_carlos[i][0])
-#   producto_mayor.sort()  
-#   producto_mayor = producto_mayor[1]
-  producto_mayor = max(tienda_de_carlos[1].values())
-  return producto_mayor
+  #des_producto = tienda_de_carlos.nlargest(1, tienda_de_carlos[1])
+  varwhile = 1
+  valor = 0
+  producto_while =  ""
+  contador = 0
+
+  while(varwhile <= len(tienda_de_carlos)):
+    if (tienda_de_carlos[varwhile][1] > valor ):
+      valor = tienda_de_carlos[varwhile][1]
+      contador = varwhile
+    varwhile = varwhile + 1
+
+  producto_while = tienda_de_carlos[contador][0]
+  return producto_while
 
 def total_inventario(tienda_de_carlos):  
   total_invet  = float(0)
@@ -27,12 +32,20 @@ def total_inventario(tienda_de_carlos):
   return total_invet
   
 def precio_menor(tienda_de_carlos):  
-  producto_menor = ""
-  for i in tienda_de_carlos:          
-    for key in tienda_de_carlos:  
-        if (tienda_de_carlos[i][1] < tienda_de_carlos[key][1] and i != key):
-            producto_menor = tienda_de_carlos[i][0]  
-  return producto_menor
+  #des_producto = tienda_de_carlos.nlargest(1, tienda_de_carlos[1])
+  varwhile = 1
+  valor = tienda_de_carlos[1][1]
+  producto_while =  ""
+  contador = 0
+
+  while(varwhile <= len(tienda_de_carlos)):
+    if (   tienda_de_carlos[varwhile][1] < valor  ):
+      valor = tienda_de_carlos[varwhile][1]
+      contador = varwhile
+    varwhile = varwhile + 1
+
+  producto_while = tienda_de_carlos[contador][0]
+  return producto_while
 
 def borrar_producto(tienda_de_carlos,producto):
   if producto[0] in tienda_de_carlos:
@@ -89,7 +102,7 @@ def principal():
                   9 : ['Chocolates',3500.0,806],
                  10 : ['Jamon',15000.0,10]}
   
-  
+  #print(len(tienda_de_carlos))
   operacion, producto=leer_datos()
   validador = ''
   if (operacion == 'AGREGAR' or operacion == 'agregar'):
